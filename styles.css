@@ -278,6 +278,33 @@ h2 { font-size: clamp(2.4rem, 4vw, 4.5rem); line-height: 1.05; letter-spacing: -
 .bar.writing.light { background: #f6d8e8; }
 .bar.review { color: white; background: #755aa0; }
 .bar.slim { min-height: 32px; color: #624505; background: #f3c956; }
+.insight-bar::after {
+  content: "→";
+  margin-left: auto;
+  font-size: 1rem;
+}
+.dependency-label {
+  grid-column: calc(var(--start) + 1) / span 2;
+  z-index: 4;
+  align-self: start;
+  margin: 2px 6px 0;
+  color: #755aa0;
+  font-size: .58rem;
+  font-weight: 850;
+  letter-spacing: .04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bar.dashed {
+  border: 2px dashed rgba(63, 40, 98, .55);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255,.08) 0,
+    rgba(255,255,255,.08) 7px,
+    rgba(255,255,255,.28) 7px,
+    rgba(255,255,255,.28) 14px
+  );
+}
 .workshop-row { min-height: 94px; }
 .event-card {
   grid-column: calc(var(--start) + 1) / span 1;
