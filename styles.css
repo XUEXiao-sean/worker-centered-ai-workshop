@@ -159,7 +159,7 @@ h2 { font-size: clamp(2.4rem, 4vw, 4.5rem); line-height: 1.05; letter-spacing: -
 .session-track {
   margin-top: 22px;
   display: grid;
-  grid-template-columns: 10fr 20fr 45fr 15fr;
+  grid-template-columns: minmax(120px, 10fr) 25fr 60fr 25fr;
   min-height: 190px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.16);
@@ -436,7 +436,7 @@ footer p { margin: 0; }
   .session-timeline-head { display: block; }
   .session-timeline-head strong { display: block; margin-top: 8px; text-align: left; }
   .session-track {
-    grid-template-columns: 160px 210px 310px 210px;
+    grid-template-columns: 160px 240px 380px 240px;
     overflow-x: auto;
   }
   .session-track article { min-height: 190px; }
