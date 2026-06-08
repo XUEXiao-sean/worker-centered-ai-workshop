@@ -137,6 +137,49 @@ h2 { font-size: clamp(2.4rem, 4vw, 4.5rem); line-height: 1.05; letter-spacing: -
 .workshop-flow li > span { color: #a9d9cb; font-size: .8rem; font-weight: 850; letter-spacing: .1em; }
 .workshop-flow strong { font-size: 1.2rem; }
 .workshop-flow p { margin: 5px 0 0; color: rgba(255,255,255,.72); }
+.session-timeline {
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,.16);
+}
+.session-timeline-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: end;
+}
+.session-timeline-head span {
+  color: #a9d9cb;
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.session-timeline-head strong { max-width: 460px; text-align: right; line-height: 1.25; }
+.session-track {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 10fr 20fr 45fr 15fr;
+  min-height: 190px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 18px;
+}
+.session-track article {
+  min-width: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+}
+.session-track article:nth-child(2) { background: rgba(122,199,168,.12); }
+.session-track article:nth-child(3) { background: rgba(240,198,93,.16); }
+.session-track article:nth-child(4) { border-right: 0; background: rgba(149,194,224,.14); }
+.session-track span { color: #a9d9cb; font-size: .72rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.session-track strong { margin-top: 18px; line-height: 1.12; }
+.session-track p { margin-top: 10px; font-size: .9rem; line-height: 1.5; }
 .submission-plan { padding-top: 130px; }
 .timeline-header {
   display: grid;
@@ -390,6 +433,13 @@ footer p { margin: 0; }
   .hero { min-height: auto; }
   .sticky { width: 180px; min-height: 180px; padding: 22px; font-size: 1.05rem; }
   .workshop-flow { padding: 28px 22px; }
+  .session-timeline-head { display: block; }
+  .session-timeline-head strong { display: block; margin-top: 8px; text-align: left; }
+  .session-track {
+    grid-template-columns: 160px 210px 310px 210px;
+    overflow-x: auto;
+  }
+  .session-track article { min-height: 190px; }
   .deadline-summary { grid-template-columns: 1fr; }
   .timeline-notes { grid-template-columns: 1fr; }
 }
