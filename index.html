@@ -15,7 +15,7 @@
   <meta name="twitter:title" content="Worker-Centered AI Workshop Hub">
   <meta name="twitter:description" content="研究笔记、共享文档与协作白板的统一入口。">
   <meta name="twitter:image" content="https://xuexiao-sean.github.io/worker-centered-ai-workshop/preview.png">
-  <link rel="stylesheet" href="styles.css?v=workshop-flow-timeline">
+  <link rel="stylesheet" href="styles.css?v=member-roles">
 </head>
 <body>
   <header class="hero">
@@ -90,6 +90,27 @@
           >打开协作白板</a>
         </article>
       </div>
+    </section>
+
+    <section class="member-section" id="members" aria-labelledby="members-title">
+      <div class="member-intro">
+        <div>
+          <p class="eyebrow">Shared ownership map</p>
+          <h2 id="members-title">成员与分工</h2>
+        </div>
+        <p>
+          拖动自己的彩色圆，把它放到正在负责或重点参与的内容旁边。
+          圆的位置会在成员之间共享。
+        </p>
+      </div>
+      <div class="member-home" aria-label="Workshop members">
+        <div class="member-key"><i style="--member-color:#e45b68"></i><span>Xiao</span></div>
+        <div class="member-key"><i style="--member-color:#3978d4"></i><span>Yueqi</span></div>
+        <div class="member-key"><i style="--member-color:#e2a82d"></i><span>Dingning</span></div>
+        <div class="member-key"><i style="--member-color:#3c9b73"></i><span>Kexin</span></div>
+        <div class="member-key"><i style="--member-color:#8b63c7"></i><span>Rongxi</span></div>
+      </div>
+      <p class="member-status" id="member-status" aria-live="polite">正在连接共享位置…</p>
     </section>
 
     <section class="overview" id="overview" aria-labelledby="overview-title">
@@ -197,7 +218,7 @@
           <p class="eyebrow">June 7 → September 10, 2026</p>
           <h2 id="timeline-title">CHI 2027 横轴研究计划</h2>
           <p class="timeline-lead">
-            两场工作坊暂定在 7 月初举行，每场 7 位参与者。研究设计、招募和材料制作并行推进，
+            6 月中旬完成工作坊设计验收，随后进行 pilot 与招募；两场正式工作坊暂定在 7 月初举行，每场 7 位参与者。
             工作坊结束后立即进入 transcription、coding、写作与论文材料整理。
           </p>
         </div>
@@ -243,6 +264,10 @@
           </div>
 
           <div class="gantt-row">
+            <div class="row-label"><strong>下次 Meeting</strong><span>Jun 11 · 14:00</span></div>
+            <div class="bar event slim" style="--start: 1; --span: 1;">6/11 14:00</div>
+          </div>
+          <div class="gantt-row">
             <div class="row-label"><strong>研究定位</strong><span>Motivation & contribution</span></div>
             <div class="bar done" style="--start: 1; --span: 1;">已完成</div>
           </div>
@@ -251,12 +276,12 @@
             <div class="bar active insight-bar" style="--start: 1; --span: 3;">提炼设计 insights</div>
           </div>
           <div class="gantt-row">
-            <div class="row-label"><strong>工作坊设计</strong><span>Protocol & activities</span></div>
-            <div class="bar active" style="--start: 1; --span: 4;">设计与迭代</div>
+            <div class="row-label"><strong>工作坊设计</strong><span>Review around Jun 16</span></div>
+            <div class="bar active" style="--start: 1; --span: 2;">设计与迭代 · 6/16 验收</div>
           </div>
           <div class="gantt-row">
-            <div class="row-label"><strong>招募海报与招募</strong><span>After pilot · date TBD</span></div>
-            <div class="bar plan dashed" style="--start: 4; --span: 2;">Pilot 后发布 · 时间待定</div>
+            <div class="row-label"><strong>招募海报与招募</strong><span>Launch Jun 27</span></div>
+            <div class="bar plan" style="--start: 3; --span: 2;">6/27 发布招募</div>
           </div>
           <div class="gantt-row">
             <div class="row-label"><strong>工作坊材料</strong><span>Prompts & templates</span></div>
@@ -264,8 +289,8 @@
             <div class="bar plan purple" style="--start: 3; --span: 2;">转化为 prompts 与材料</div>
           </div>
           <div class="gantt-row">
-            <div class="row-label"><strong>预实验</strong><span>Pilot session · date TBD</span></div>
-            <div class="bar event slim dashed" style="--start: 3; --span: 2;">Pilot · 时间待定</div>
+            <div class="row-label"><strong>预实验</strong><span>Pilot session · Jun 21</span></div>
+            <div class="bar event slim" style="--start: 3; --span: 1;">Pilot · 6/21</div>
           </div>
           <div class="gantt-row workshop-row">
             <div class="row-label"><strong>正式工作坊</strong><span>Early July</span></div>
@@ -309,9 +334,11 @@
       </div>
 
       <div class="timeline-notes">
+        <p><strong>Next meeting:</strong> 6 月 11 日下午 2:00，推进工作坊设计与材料分工。</p>
+        <p><strong>Design review:</strong> 6 月 16 日左右完成工作坊设计验收。</p>
         <p><strong>Fieldwork target:</strong> 7 月初完成两场工作坊，每场 7 人，共 14 位参与者。</p>
         <p><strong>Literature dependency:</strong> 文献了解需要产出可操作的 insights，用于确定 sensitizing questions、Magic Machine prompts 和材料结构。</p>
-        <p><strong>Recruitment dependency:</strong> Pilot 时间待定；招募海报将在 Pilot 完成并修订材料后发布，具体发布日期待定。</p>
+        <p><strong>Recruitment dependency:</strong> 6 月 21 日完成 Pilot，修订材料后于 6 月 27 日发布招募。</p>
         <p><strong>Analysis:</strong> Transcription 与集中 Coding 合计 2 周：W5 完成逐场转录与整理，W6 完成集中 Coding。</p>
         <p><strong>Submission buffer:</strong> 9 月 3 日锁定摘要和论文叙事，9 月 8 日冻结正文，9 月 9 日完成上传检查。</p>
       </div>
@@ -323,9 +350,29 @@
     </section>
   </main>
 
+  <div class="member-markers" aria-label="Draggable member responsibility markers">
+    <button class="member-marker" type="button" data-member="xiao" style="--member-color:#e45b68" aria-label="拖动 Xiao 的分工标记">
+      <span>X</span><strong>Xiao</strong>
+    </button>
+    <button class="member-marker" type="button" data-member="yueqi" style="--member-color:#3978d4" aria-label="拖动 Yueqi 的分工标记">
+      <span>Y</span><strong>Yueqi</strong>
+    </button>
+    <button class="member-marker" type="button" data-member="dingning" style="--member-color:#e2a82d" aria-label="拖动 Dingning 的分工标记">
+      <span>D</span><strong>Dingning</strong>
+    </button>
+    <button class="member-marker" type="button" data-member="kexin" style="--member-color:#3c9b73" aria-label="拖动 Kexin 的分工标记">
+      <span>K</span><strong>Kexin</strong>
+    </button>
+    <button class="member-marker" type="button" data-member="rongxi" style="--member-color:#8b63c7" aria-label="拖动 Rongxi 的分工标记">
+      <span>R</span><strong>Rongxi</strong>
+    </button>
+  </div>
+
   <footer>
     <p>Worker-Centered AI Workshop Hub</p>
     <a href="#top">返回顶部</a>
   </footer>
+  <script src="collaboration-config.js?v=20260609"></script>
+  <script src="collaboration.js?v=20260609"></script>
 </body>
 </html>
